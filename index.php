@@ -18,6 +18,7 @@
         die ("connection failed");
     }?>
         <div class="header"><h2>BTS ALBUMS</h2></div>
+    <div class="add"><a href="create.php">+ New Album</a></div>
         <div class="desc">
             <?php
             $sql="SELECT *FROM BTS";
@@ -37,6 +38,10 @@
                         </div>
                         <div class="remark">
                             <?php echo $row['remarks']; ?>
+                        </div>
+                        <div class="change">
+                            <div class="edit"><a href="./edit.php?id=<?php echo $row['id']; ?>">EDIT</a></div>
+                        <div class="delete"><a href="./delete.php?id=<?php echo $row['id']; ?>">DELETE</a></div>
                         </div>
                     </div>
                     <?php

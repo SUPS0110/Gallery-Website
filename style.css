@@ -51,7 +51,7 @@ text-shadow: 3px 3px 3px rgb(111, 74, 148);
     border-radius: 5px;
     width:230px;
     margin: 50px;
-    
+    height: fit-content;
 
 }
 .id{
@@ -80,8 +80,34 @@ img{
     left:5px;
     box-shadow: 3px 3px 3px  rgb(212, 106, 212);
 }
+.change{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    margin: 10px;
+}
+.change a{
+    color: brown;
+}
 .gallery:hover{
     background-color: rgb(245, 170, 245);
     box-shadow: 5px 5px 5px  rgb(221, 121, 221);
 
+}
+.add a{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    height: 20px;
+    width: 90px;
+    left: 85%;
+    padding: 5px;
+    border:4px solid rgb(107, 50, 107);
+    background-color: antiquewhite;
+    border-radius: 11px;
 }
