@@ -40,7 +40,9 @@
                             <?php echo $row['remarks']; ?>
                         </div>
                         <div class="change">
-                            <div class="edit"><a href="./edit.php?id=<?php echo $row['id']; ?>">EDIT</a></div>
+<div class="edit">
+<a href="./editform.php?id=<?php echo $row['id'];?>& image_url=<?php echo $row['image_url'];?>& title=<?php echo $row['title'];?>& remarks=<?php echo $row['remarks'];?>">EDIT</a>
+</div>
                         <div class="delete"><a href="./delete.php?id=<?php echo $row['id']; ?>">DELETE</a></div>
                         </div>
                     </div>
